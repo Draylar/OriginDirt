@@ -1,31 +1,25 @@
 package com.github.draylar.origindirt.blocks;
 
 import com.github.draylar.origindirt.Blocks;
-import com.github.draylar.origindirt.Items;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockDirt;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.item.EntityItem;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-
-import java.util.Random;
 
 public class BlockOriginDirt extends Block
 {
+
     public BlockOriginDirt()
     {
         super(Material.GROUND);
         setTranslationKey("origin_dirt");
         setRegistryName("origin_dirt");
+        setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
     }
 
 
